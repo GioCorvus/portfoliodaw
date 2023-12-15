@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var dropdownBtn = document.querySelector(".dropbtn");
+            var dropdownContent = document.querySelector(".dropdown-content");
+    
+            dropdownBtn.addEventListener("click", function() {
+                dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-left">
+            <img src="img/ico.gif" alt="Icono" class="menu-icon">
+            <h1>Portfolio de Sergio Acosta</h1>
+        </div>
+        <div class="menu-center">
+            <div class="dropdown">
+                <button class="dropbtn">Asignaturas</button>
+                <div class="dropdown-content">
+                    <a href="dwes.html">DWES</a>
+                    <a href="dwec.html">DWEC</a>
+                    <a href="ddaw.html">DDAW</a>
+                    <a href="diw.html">DIW</a>
+                    <a href="index.html">Volver al inicio.</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-right">
+            <div class="search">
+                <input type="text" placeholder="Buscar">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left-sidebar">
+
+        </div>
+        <div class="main-content">
+            <div class="image-container">
+                <img src="img/client.gif" alt="bienvenida">
+            </div>
+            <div class="content-container">
+                <div class="text">
+                    <p>
+                        <h2 class='subtitulo'>Acepta el reto</h2>
+                        <ul id="centered-list">
+                            <li><a href='dwec/javascript/aceptaelreto/mario158/repaso.html'>158: Los Saltos de Mario.</a></li>
+                            <li><a href='dwec/javascript/aceptaelreto/tablas499/repaso.html'>499: Modificacion de tablas.</a></li>
+                            <li><a href='dwec/javascript/aceptaelreto/digitos140/repaso.html'>140: Suma de digitos.</a></li>
+                            <li>Under construction...</li>
+                            <li>Disculpa, Miguel</li>
+                            <li>Prometo tener muchos mas</li>
+                            <li>AER la proxima vez </li>
+                        </ul>
+                        <h2 class='subtitulo'>Trabajos de Clase</h2>
+                        <ul id="centered-list">
+                            <li><a href='dwec/javascript/examen/index.html'>Examen Inicial de JavaScript.</a></li>
+                        </ul>
+                        <h2 class='subtitulo'>Proyectos web</h2>
+                        <ul id="centered-list">
+                            <li>Aqui iran. Que de momento, no hay.</li>
+                        </ul>
+                        <h2 class='subtitulo'>Recursos</h2>
+                        <ul id="centered-list">
+                            <li><a href='https://javascript.info/'>La sagrada biblia, javascript.info.</a></li>
+                            <li><a href='https://openwebinars.net/cursos/javascript-principiantes/'>Curso inicial de JavaScript.</a></li>
+                        </ul>
+                    </p>
+                        <div class='div-pixel'>
+                            <img src="img/totoro.gif">
+                        </div>
+                </div>
+                <div class="text">
+
+                    <p>
+                        <h2 class='subtitulo'>Reflexiones: Diario de Bitácora.</h2>
+                        Tal y como el nombre indica y para satisfacción de nuestro profesor Miguel, en éste apartado
+                        habalremos sobre qué nos ha parecido la asignatura hasta ahora. En qué podemos mejorar nosotros, qué nos gusta y qué no,
+                        y todo ese tipo de cosas que siempre nos ayudan a mejorar como personas.
+                        <br/><br/>
+
+                        Seguiré la siguiente estructura: Cada vez que quiera escribir algo, titularé dicha reflexión con el día en el que la he
+                        formulado, y todo lo que diga irá en base de los días que han transcurrido desde la última hasta la que estaré escribiendo en cuestión.
+                        <br/><br/>
+                        <h2>Reflexión del 28/09/2023.</h2>
+                        ¡Bueno! No hay mucho que decir hasta ahora por mi parte. El curso lleva tres semanas, y he faltado a un par de días, para mi desgracia.
+                        Sí es cierto que me he dado cuenta de una cosa: La manera en la que se imparte desarrollo en cliente es MUY útil para mí.
+                        Tenemos la libertad suficiente como para evolucionar por nuestra cuenta mientras Miguel nos ofrece un andamio, una base algo consistente en
+                        clase. Es cierto que se echan de menos los periodos de cada día en los que Paco, durante primero, nos metía con calzador correcciones, y siempre 
+                        veíamos posibles errores y siempre nos dejaba más claro el código. También es cierto que ya sabemos programar, y lo que tenemos que hacer ahora es expandir
+                        nuestro repertorio con JavaScript.
+                        <br/><br/>
+                        Mi única "recomendación" sería el seguir con ejemplos como el de Melissande, donde todos nos enganchamos a la pantalla mientras nos explicas trucos, y aconsejas
+                        maneras en las que podríamos optimizar nuestro código. Más ejemplos, quiero decir.
+                        <br/><br/>
+                        Por otra parte, he de felicitar la libertad que se nos deja: Similar a la que tendremos en nuestro cupo de trabajo. Ésto significa que siempre que estamos picando,
+                        tenemos acceso a todos los recursos que tendríamos en la vida real: Documentación, IAs, apuntes... Y se agradece mucho. Pero claro está, nosotros como alumnos, como 
+                        programadores recién salidos del cascarón, tenemos que ser responsables con lo mucho o poco que usamos éstos recursos. 
+
+                </div>
+                
+            </div>
+            
+                <div class="footer">
+                    <p>Aqui acabara por ir mi informacion de contacto... Cuando la tenga, ademas de un github precioso.</p>
+                </div>
+        </div>
+        <div class="right-sidebar">
+
+        </div>
+    </div>
+</body>
+</html>

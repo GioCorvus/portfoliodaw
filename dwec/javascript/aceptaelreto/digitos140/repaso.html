@@ -1,0 +1,49 @@
+<!--Sergio Acosta Portocarrero-->
+<html>
+    <head> 
+        <meta charset="UTF-8">
+        <title>Repasos JavaScript</title>
+        <meta name="description" content="Aquí trabajaré mis distintos repasos de javascript.">
+        <meta name="author" content="Sergio Acosta">
+        <script>
+            function sumarDigitos() {
+                var entrada = document.getElementById("entrada").value;
+
+                var numero = parseInt(entrada);
+
+                if (numero < 0) {
+                    alert("Fin del programa.");
+                    return;
+                }
+
+                var numeroStr = numero.toString();
+
+                var suma = 0;
+                var sumandos = "";
+
+                for (var i = 0; i < numeroStr.length; i++) {
+                    var digito = parseInt(numeroStr.charAt(i));
+
+                    sumandos += digito;
+
+                    suma += digito;
+
+                    if (i < numeroStr.length - 1) {
+                        sumandos += " + ";
+                    }
+                }
+                var resultado = sumandos + " = " + suma;
+                document.getElementById("resultado").innerHTML = resultado;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>¡Suma de digitos, AER 140!</h1>
+        <p>Recuerda abrir la consola con el f12.</p>
+        <img src="img/voli.gif">
+        <p>Ah, pero cuando no compila...</p>
+        <input type="text" id="entrada" placeholder="Ingresa un número" />
+        <button onclick="sumarDigitos()">BOOM!</button>
+        <p id="resultado"></p>
+    </body>
+</html>

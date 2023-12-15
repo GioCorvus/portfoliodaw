@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var dropdownBtn = document.querySelector(".dropbtn");
+            var dropdownContent = document.querySelector(".dropdown-content");
+    
+            dropdownBtn.addEventListener("click", function() {
+                dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-left">
+            <img src="img/ico.gif" alt="Icono" class="menu-icon">
+            <h1>Portfolio de Sergio Acosta</h1>
+        </div>
+        <div class="menu-center">
+            <div class="dropdown">
+                <button class="dropbtn">Asignaturas</button>
+                <div class="dropdown-content">
+                    <a href="dwes.html">DWES</a>
+                    <a href="dwec.html">DWEC</a>
+                    <a href="ddaw.html">DDAW</a>
+                    <a href="diw.html">DIW</a>
+                    <a href="index.html">Volver al inicio.</a>
+                </div>
+            </div>
+        </div>
+        <div class="menu-right">
+            <div class="search">
+                <input type="text" placeholder="Buscar">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="left-sidebar">
+
+        </div>
+        <div class="main-content">
+            <div class="image-container">
+                <img src="img/construction.gif" alt="bienvenida">
+            </div>
+                <div class="footer">
+                    <p>Aqui acabara por ir mi informacion de contacto... Cuando la tenga, ademas de un github precioso.</p>
+                </div>
+        </div>
+        <div class="right-sidebar">
+
+        </div>
+    </div>
+</body>
+</html>
